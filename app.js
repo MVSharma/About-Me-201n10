@@ -61,7 +61,41 @@ if (answer3 === 'yes' || answer3.toLowerCase() === 'y' || answer3 === 'Yes') {
     console.log(user + ' answered question 3 correctly');
 } else {
     //if its not correct, inform them and move to next question
-    alert('Well now you do!!?');
+    alert(' Wrong! Well now you know!');
     console.log(user + ' answered question 3 wrong');
 }
 console.log(user + ' has ' + userPoints + ' points');
+
+//4th question
+
+var answer4 = prompt('Does it take more than 10 hours to fly to Fiji from Seattle? Type yes or no');
+
+console.log(user + ' answered ' + answer4);
+
+if (answer4 === 'yes' || answer4.toLowerCase() === 'y' || answer4 === 'Yes') {
+    userPoints++;
+    alert('You are right!.');
+    console.log(user + ' answered question 4 correctly')
+} else {
+    alert('Sorry, it actually does!');
+    console.log(user + 'answered question 4 wrong');
+}
+console.log(user + ' has ' + userPoints + 'points');
+
+// 5th question
+
+var answer5 = prompt('Is Fiji one of the first places to celebrate the New Year? Type yes or no');
+
+console.log(user + ' answered ' + answer5);
+
+if (answer5 === 'yes' || answer5.toLowerCase() === 'y' || answer5 === 'Yes') {
+    userPoints++;
+    alert('It is! Happy New Year!!');
+    console.log(user + 'answered question 5 correctly')
+} else {
+    alert('WRONG! Now you know, spread the word.');
+    console.log(user + 'answered question 5 wrong')
+}
+alert('Congratulations ' + user + ' you scored ' + userPoints + '!');
+alert('Thanks again for playing my game!');
+//use variables for user's name and how many points they got
