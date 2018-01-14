@@ -96,6 +96,37 @@ if (answer5 === 'yes' || answer5.toLowerCase() === 'y' || answer5 === 'Yes') {
     alert('WRONG! Now you know, spread the word.');
     console.log(user + 'answered question 5 wrong')
 }
+
+// 6th question
+
+var answer6 = prompt('How many times have I traveled to Fiji?');
+
+console.log(user + 'answered' + answer6);
+
+var travelTimes = ['1', '2' , '3' , '4'];
+
+for (var i = 0; i <travelTimes.length; i++);
+    console.log(travelTimes[i]);
+
+
+while(answer6 != 4) {
+    userPoints++;
+    alert('Sorry try again!');
+if(user)
+    var answer6 = prompt('How many times have I traveled to Fiji?');
+
+} 
+
+// 7th question
+
+var answer7 = prompt('How old was I the last time I visited Fiji?');
+
+while(answer7 != 15) {
+    var counter = 4
+    alert('Nope!');
+    var answer7 = prompt('How old was I the last time I visited Fiji?')
+}
+
 alert('Congratulations ' + user + ' you scored ' + userPoints + '!');
 alert('Thanks again for playing my game!');
 //use variables for user's name and how many points they got
