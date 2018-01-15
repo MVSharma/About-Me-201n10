@@ -14,7 +14,7 @@ alert('OK ' + user + ', Get Ready to Play!');
 
 var answer1 = prompt('Is Fiji in the Pacific Ocean? Type yes or no');
 
-console.log(user + ' answered ' + answer1 );
+console.log(user + ' answered ' + answer1);
 
 if (answer1 === 'yes' || answer1.toLowerCase() === 'y' || answer1 === 'Yes') {
     //if it's correct give them a point
@@ -99,34 +99,47 @@ if (answer5 === 'yes' || answer5.toLowerCase() === 'y' || answer5 === 'Yes') {
 
 // 6th question
 
-var answer6 = prompt('How many times have I traveled to Fiji?');
-
-console.log(user + 'answered' + answer6);
-
-var travelTimes = ['1', '2' , '3' , '4'];
-
-for (var i = 0; i <travelTimes.length; i++);
-    console.log(travelTimes[i]);
-
-
-while(answer6 != 4) {
-    userPoints++;
-    alert('Sorry try again!');
-if(user)
-    var answer6 = prompt('How many times have I traveled to Fiji?');
-
-} 
-
-// 7th question
-
-var answer7 = prompt('How old was I the last time I visited Fiji?');
-
-while(answer7 != 15) {
-    var counter = 4
-    alert('Nope!');
-    var answer7 = prompt('How old was I the last time I visited Fiji?')
+var counter = 0;
+while (answer6 != 4 && counter < 4) {
+    if (user) {
+        var answer6 = prompt('How many times have I traveled to Fiji?');
+    }
+    if (answer6 > 4) {
+        alert('Man, I wish i was able to visit that many times!')
+        alert('Sorry try again!'); //negative
+    } else if (answer6 < 4) {
+        alert('You gotta give me more credit that that!')
+        alert('Sorry try again!'); //negative
+    } else if (answer6 === 4) {
+        alert('GOOD GUESS!');
+        userPoints++; //positive
+    }
+    counter++;
+    if (counter === 4) {
+        alert('Your out of guesses!');
+    }
 }
 
-alert('Congratulations ' + user + ' you scored ' + userPoints + '!');
+// 7th question
+counter = 0;
+var travelTimes = ['15', 15, 'fifteen', 'Fifteen'];
+
+while (counter < 6 && travelTimes.indexOf(answer7) === -1) {
+    counter++;
+    
+    var answer7 = prompt('How old was I the last time I visited Fiji?')
+    if (travelTimes.indexOf(answer7) !== -1) {
+        alert('GREAT JOB!');
+        userPoints++;
+    } else {
+        alert('Nope!');        
+    }
+    if (counter === 6) {
+        alert('Your out of guesses!');
+    }
+}
+alert('You could have answered 15, "15", "fifteen", "Fifteen"');
+
+alert('Congratulations ' + user + ' you scored ' + userPoints + ' out of 7!');
 alert('Thanks again for playing my game!');
 //use variables for user's name and how many points they got
