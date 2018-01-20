@@ -1,0 +1,34 @@
+* 
+body {
+    width: 1300px;
+    font-family: Arial, Verdana, sans-serif;
+    color: #030303;
+    background-image: url('../img/le-beach.jpg');
+    background-color: #FFF0C1;
+    font-size: 120%;
+}
+
+h1 {
+    text-align: left;
+    color: #4681C4;
+}
+
+blockquote {
+    float: right;
+    width: 275px;
+    font-size: 90%;
+    font-style: italic;
+    font-family: Georgia, Times, serif;
+    margin: 10px 0px 10px 10px;
+    padding: 10px;
+    border-top: 2px solid #020202;
+    border-bottom: 2px solid #020202;}
+
+div {
+    padding: 5px;
+    font-size: 100%;
+    border: 0px;
+    background-color: rgba(166, 209, 212, 0.788);
+    text-align: center;
+   }
+
