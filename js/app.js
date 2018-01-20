@@ -27,12 +27,9 @@ function question1 () {
   }
   console.log(user + ' has ' + userPoints + ' points');
   console.log('log answer for' +question1);}
-//call the function
-question1 ();
 
 
 //second question
-
 function question2 () {
   var answer2 = prompt('Is Hindi the primary language in Fiji? Type yes or no');
   console.log(user + ' answered ' + answer2);
@@ -47,8 +44,6 @@ function question2 () {
     console.log(user + ' answered question 2 wrong');
   }
   console.log(user + ' has ' + userPoints + ' points');}
-//call function "question2"
-question2 ();
 
 
 //third question
@@ -66,8 +61,6 @@ function question3 () {
     console.log(user + ' answered question 3 wrong');
   }
   console.log(user + ' has ' + userPoints + ' points');}
-//call function "question3"
-question3 ();
 
 
 //4th question
@@ -83,8 +76,6 @@ function question4 () {
     console.log(user + 'answered question 4 wrong');
   }
   console.log(user + ' has ' + userPoints + 'points');}
-//call function "question4"
-question4 ();
 
 
 // 5th question
@@ -99,8 +90,7 @@ function question5 () {
     alert('WRONG! Now you know, spread the word.');
     console.log(user + 'answered question 5 wrong');
     console.log('answer function' +answer5);}}
-//call function "question5"
-question5 ();
+
 
 // 6th question
 function question6 () {
@@ -122,13 +112,9 @@ function question6 () {
     if (counter === 4) {
       alert('Your out of guesses!');
       console.log('user answers' +question6);}}}
-//call function
-question6 ();
-
 
 
 // 7th question
-
 var counter = 0;
 var travelTimes = ['15', 15, 'fifteen', 'Fifteen'];
 while (counter< 6 && travelTimes.indexOf(answer7) === -1) {
@@ -145,5 +131,12 @@ while (counter< 6 && travelTimes.indexOf(answer7) === -1) {
     alert('Congratulations ' + user + ' you scored ' + userPoints + ' out of 7!');
     alert('Thanks again for playing my game!');}}
 
+//call forth the functions
+question1 ();
+question2 ();
+question3 ();
+question4 ();
+question5 ();
+question6 ();
 
 //use variables for user's name and how many points they
